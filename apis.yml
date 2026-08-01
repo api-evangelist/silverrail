@@ -1,9 +1,31 @@
 aid: silverrail
 name: SilverRail
-description: 'SilverRail is a company surfaced as a portfolio company of accel, canaan-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: travel. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  SilverRail Technologies is a rail technology company that powers global rail
+  ecommerce and distribution. Its platform spans journey planning, ticketing,
+  and onboard information, aiming to transform the rail experience for travelers
+  while making rail retail easier and more profitable for operators, travel
+  agencies, and distributors. SilverRail connects rail carriers and sellers so
+  rail inventory can be searched, booked, and ticketed across markets. The
+  company was surfaced in the API Evangelist network as a portfolio company of
+  Accel and Canaan Partners. As of this enrichment pass SilverRail runs a
+  corporate marketing site (Next.js) but publishes no public developer portal,
+  API reference, OpenAPI specification, SDKs, or /.well-known discovery
+  documents; its API and distribution capabilities appear to be delivered
+  through partner/enterprise integration rather than a self-serve public API.
 url: https://raw.githubusercontent.com/api-evangelist/silverrail/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.sanity.io/images/cgzuzjbk/production/4ca055ec9b6a1907697142b32ac142b8dddd71e6-1200x630.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,10 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Travel
+- Rail
+- Transportation
+- Ticketing
+- Distribution
+- Ecommerce
+- Booking
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +53,19 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.silverrailtech.com
+  url: https://www.silverrailtech.com
+- type: Support
+  url: https://www.silverrailtech.com/contact
+- type: Blog
+  url: https://www.silverrailtech.com/resources/articles
+- type: TermsOfService
+  url: https://www.silverrailtech.com/terms
+- type: GitHubOrganization
+  url: https://github.com/silverrailtech
+- type: DomainSecurity
+  url: security/silverrail-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
