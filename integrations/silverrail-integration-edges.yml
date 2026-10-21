@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/silverrail/integrations
 - https://n8n.io/integrations/silverrail/
@@ -10,7 +10,76 @@ checked:
 - https://monid.ai/tools/silverrail
 - https://n8n.io/integrations/silverrail/
 - https://zapier.com/apps/silverrail/integrations
+- https://eradis.era.europa.eu/safety_docs/licences/default.aspx
+- https://osdm.io/
+- https://osdm.io/tools/implementations/
+- https://tps.thetrainline.com/our-products/global-api/
+- https://uic.org/members/
+- https://www.amtrak.com/partners
+- https://www.raildeliverygroup.com/about-us/our-members.html
+- https://www.raildeliverygroup.com/our-services/fares-and-ticketing/rdg-accreditation.html
+- https://www.rspaccreditation.org/publicDocumentation.php
+- https://www.thetrainline.com/partners
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: OSDM (UIC Open Sales and Distribution Model)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://osdm.io/tools/implementations/
+  category: rail sales & distribution API standard (OSDM implementation)
+  contract_reference:
+    register: OSDM implementation status table (osdm.io/tools/implementations/, UIC OSDM team)
+    standard: OSDM Online API (UIC Open Sales and Distribution Model, IRS 90918-10)
+    spec_file: null
+    role: osdm-implementer
+    registered_name: Silverrail
+    register_id: https://www.silverrailtech.com/
+    matched_domain: silverrailtech.com
+    matched_by: domain
+    osdm_roles:
+    - Retailer
+    implementations:
+    - osdm_version: 3.0.5
+      state: in production
+      roles: Retailer
+    register_as_of: January 2026
+    signal_note: 'listing alone: the OSDM team''s implementation status table (parties ask to be added; no conformance
+      test is published), so no certified_products; versions, states and roles are context, never counted; implementing
+      the API is shape (report-only)'
+    detected_by: sweep-rail-osdm.py
+    detected: '2026-10-20'
+  detected_by: sweep-rail-osdm.py
+  first_seen: '2026-10-20'
+- partner_name: UIC (International Union of Railways)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://uic.org/companies/silverrail-technologies-ab
+  category: railway union membership
+  contract_reference:
+    register: UIC members (uic.org/members/, the page's own member payload)
+    standard: UIC International Railway Solutions (IRS) / OSDM steward
+    spec_file: null
+    role: uic-member
+    registered_name: Silverrail Technologies AB
+    register_acronym: SilverRail
+    register_id: https://uic.org/companies/silverrail-technologies-ab
+    register_country: Sweden
+    partner_tier: Affiliate member
+    matched_domain: silverrailtech.com
+    matched_by: domain
+    signal_note: 'participation only: membership of the worldwide railway union that stewards OSDM and the IRS leaflets;
+      the membership class is partner_tier, context only'
+    detected_by: sweep-rail-osdm.py
+    detected: '2026-10-20'
+  detected_by: sweep-rail-osdm.py
+  first_seen: '2026-10-20'
 templates: []
